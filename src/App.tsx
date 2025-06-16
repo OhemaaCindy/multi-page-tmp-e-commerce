@@ -1,34 +1,35 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import LoginPage from "./pages/login-page";
-import RegisterPage from "./pages/register-page";
+import Home from "./pages/home-page";
+import NotFound from "./pages/notFound-page";
+import Cart from "./pages/cart-page";
+import Checkout from "./pages/checkout-page";
+import Product from "./pages/product-page";
+import Confirmation from "./pages/confirmation-page";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", Component: LoginPage },
-    { path: "/register", element: <RegisterPage /> },
-    // { path: "/profile", element: <ProfilePage /> },
-    // { path: "/forgot-password", element: <ForgotPassword /> },
-    // { path: "/reset-password", element: <ResetPassword /> },
-    // {
-    //   path: "/dashboard",
-    //   element: <Protectedlayout />,
-    //   children: [
-    //     {
-    //       index: true,
-    //       element: (
-    //         <ErrorBoundary fallback={<div>Something went wrong</div>}>
-    //           <React.Suspense fallback="loading....">
-    //             <HomePage />
-    //           </React.Suspense>
-    //         </ErrorBoundary>
-    //       ),
-    //     },
-    //     { path: ":id", element: <SinglePage /> },
-    //     { path: "*", element: <DashboardNotFound /> },
-    //   ],
-    // },
-    // { path: "/*", element: <NotFoundPage /> },
+    {
+      path: "/",
+      element: <Home />,
+      errorElement: <NotFound />,
+    },
+    {
+      path: "/product/:id",
+      element: <Product />,
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
+    },
+    {
+      path: "/checkout",
+      element: <Checkout />,
+    },
+    {
+      path: "/confirmation",
+      element: <Confirmation />,
+    },
   ]);
 
   return (
