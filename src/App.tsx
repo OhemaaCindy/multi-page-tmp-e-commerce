@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import LoginPage from "./pages/login-page";
+import RegisterPage from "./pages/register-page";
 
 function App() {
   const router = createBrowserRouter([
-    // { path: "/", Component: LoginPage },
-    // { path: "/register", element: <RegisterPage /> },
+    { path: "/", Component: LoginPage },
+    { path: "/register", element: <RegisterPage /> },
     // { path: "/profile", element: <ProfilePage /> },
     // { path: "/forgot-password", element: <ForgotPassword /> },
     // { path: "/reset-password", element: <ResetPassword /> },
