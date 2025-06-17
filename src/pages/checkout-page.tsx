@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { useCheckoutStore } from "../store/checoutStore";
 import type { CheckoutFormData } from "../schemas/checkoutSchema";
-import CheckoutForm from "../components/forms/checkoutForm";
+import CheckoutForm from "../components/forms/checkout-form";
 
 const Checkout = () => {
   const setCheckoutData = useCheckoutStore((state) => state.setData);

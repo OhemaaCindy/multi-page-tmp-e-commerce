@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   checkoutSchema,
   type CheckoutFormData,
-} from "../../schemas/checkoutSchema";
+} from "../../schemas/checkout.schema";
 
 export default function CheckoutForm({
   onSubmit,
