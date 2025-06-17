@@ -1,15 +1,13 @@
-import { StrictMode, Suspense } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
-import Providers from "./components/providers/index.tsx";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { CartProvider } from './components/store/CartContextProvider'
+import './sass/index.scss'
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <Providers>
-      <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-        <App />
-      </Suspense>
-    </Providers>
-  </StrictMode>
-);
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <CartProvider>
+      <App />
+    </CartProvider>
+  </React.StrictMode>
+)
