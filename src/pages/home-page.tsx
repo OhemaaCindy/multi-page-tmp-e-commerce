@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import ItemsSection from "../components/items-section";
 import Speakersection from "../components/speaker-section";
+import HeadPhones from "../components/yx1-headPhones";
 import Zx7speaker from "../components/zx7-speaker";
 // import ItemsSection from "../components/items-section";
 // import Speakersection from "../components/speaker-section";
@@ -26,6 +27,7 @@ export default function Home() {
       <ItemsSection />
       <Speakersection />
       <Zx7speaker />
+      <HeadPhones />
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products?.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
