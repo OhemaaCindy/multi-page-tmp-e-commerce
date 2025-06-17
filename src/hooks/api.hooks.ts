@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { getAllProducts, getProductBySlug } from "../services/product.service";
-import type { Product } from "../schemas/product.schema";
+import { getAllProducts, getProductBySlug } from "../services/product-services";
+import type { Product } from "../schemas/productSchema";
 
 export const useProducts = () => {
   return useQuery<Product[], Error>({

@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router";
-import { useCheckoutStore } from "../store/checkout-store";
-import { useCartStore } from "../store/cart-store";
+import { useCheckoutStore } from "../store/checoutStore";
+import { useCartStore } from "../store/cartStore";
 import {
   calculateSubtotal,
   calculateTotal,
   calculateVAT,
   SHIPPING_COST,
-} from "../util/helpers";
+} from "../utils/helper";
 
 export default function Confirmation() {
   const { data, clear: clearCheckout } = useCheckoutStore();

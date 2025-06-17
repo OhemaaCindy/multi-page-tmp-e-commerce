@@ -4,7 +4,7 @@ import Home from "./pages/home-page";
 import NotFound from "./pages/notFound-page";
 import Cart from "./pages/cart-page";
 import Checkout from "./pages/checkout-page";
-import Product from "./pages/product-page";
+import Product from "./pages/product-details-page";
 import Confirmation from "./pages/confirmation-page";
 
 function App() {

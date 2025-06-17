@@ -1,31 +1,38 @@
 import Header from "../components/header";
 import ItemsSection from "../components/items-section";
 import Speakersection from "../components/speaker-section";
+// import ItemsSection from "../components/items-section";
+// import Speakersection from "../components/speaker-section";
+import { useProducts } from "../hooks/api.hooks";
+import type { Product } from "../schemas/productSchema";
+import { Link } from "react-router";
 
-export default function Home = () => {
-   const { data: products, isLoading, error } = useProducts();
+export default function Home() {
+  const { data: products, isLoading, error } = useProducts();
 
   if (isLoading) return <p className="p-4">Loading products...</p>;
   if (error)
     return <p className="p-4 text-red-500">Failed to load products.</p>;
 
   return (
-    <div className="m-auto ">
+    // <div className="m-auto ">
+    //   <Header />
+    //   <ItemsSection />
+    //   <Speakersection />
+    //       </div>
+    <main>
       <Header />
       <ItemsSection />
       <Speakersection />
-       <main>
-      <Header />
+
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products?.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </main>
-    </div>
   );
-};
-
+}
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (

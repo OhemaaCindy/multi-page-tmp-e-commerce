@@ -34,7 +34,7 @@ const ItemsSection = () => {
           className=" flex flex-col mt-20 mb-30 items-center bg-[#F1F1F1] py-4 w-60 "
           key={item.id}
         >
-          <img src={item.img} className="w-25 h-" />
+          <img src={item.img} className="w-25 h-auto" />
           <p className="font-bold">{item.text}</p>
           <div className="flex gap-2 items-center">
             <p className="text-[#979797]  text-sm ">{item.actionText}</p>

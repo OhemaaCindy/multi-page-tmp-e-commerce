@@ -1,8 +1,7 @@
-
 import { useParams } from "react-router";
-import { useProductBySlug } from "../hooks/api.hook";
 import { useState } from "react";
-import { useCartStore } from "../store/cart-store";
+import { useProductBySlug } from "../hooks/api.hooks";
+import { useCartStore } from "../store/cartStore";
 
 export default function Product() {
   const { id: slug } = useParams();
