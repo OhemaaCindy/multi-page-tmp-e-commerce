@@ -95,5 +95,5 @@ app.post('/create-order', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('✅ Checkout server running on http://localhost:3000');
+  // console.log('✅ Checkout server running on http://localhost:3000');
 });
