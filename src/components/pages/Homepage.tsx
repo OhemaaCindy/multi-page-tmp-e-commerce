@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import speaker from '../../assets/home/mobile/image-speaker-zx9.png'
-import Button from '../UI/Button'
-import Products from '../shared/Products'
-import '../../sass/pages/homepage.scss'
-import { Link } from 'react-router-dom'
+import speaker from "../../assets/home/mobile/image-speaker-zx9.png";
+import Button from "../UI/Button";
+import Products from "../shared/Products";
+import "../../sass/pages/homepage.scss";
+import { Link } from "react-router-dom";
 
 const Homepage: React.FC = function () {
   return (
     <div className="homepage">
       <section className="hero-section">
         <div className="container">
-          <h1>XX99 Mark II Headphones</h1>
+          <h1>XX99 MARK II HEADPHONES</h1>
           <p>NEW PRODUCT</p>
           <p>
             Experience natural, lifelike audio and exceptional build quality
@@ -54,7 +54,7 @@ const Homepage: React.FC = function () {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

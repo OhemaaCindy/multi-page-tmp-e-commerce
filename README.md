@@ -1,36 +1,90 @@
-# audiophile-e-commerce
-![Screenshot (486)](https://github.com/user-attachments/assets/1dcf0d0b-ac46-466f-9ce9-9373d87bd382)
+# 💖 TMP – Chic E-Commerce App
+A stylish and responsive multi-page e-commerce site built with 💫 Vite, 💅 TypeScript, 💖 React, and 🎀 SASS. Shop for goodies, manage your cart, and check out seamlessly—all wrapped in a cute and modern UI.
+
+## 🌸 Live Preview
+🔗 View the Sparkly Site
+
+## 💼 Tech Stack
+- ⚡️ Vite – super fast dev/build tool
+
+- 💕 React + TypeScript – for interactive magic
+
+- 🎨 SASS – beautiful, utility-first styling
+
+- 💫 React Router DOM – smooth page navigation
+
+- 🛍 Context – lightweight state management for your cart
+
+- 💌 React Hook Form – easy-peasy form validation
+
+- 📦 Axios – clean and simple data fetching
+
+## ✨ Features
+- 📱 Fully responsive on mobile, tablet & desktop
+
+- 👗 Gorgeous product listing & detail views
+
+- 🛒 Interactive cart system (add, remove, update items)
+
+- 💳 Checkout form with real-time validation
+
+- 💰 Auto-calculated VAT (20%) + shipping ($50)
+
+- 🎉 Order summary modal after checkout
+
+- 💾 Cart saved in localStorage
+
+- 🔄 Smooth transitions across all pages
+
+## 📁 Project Structure
+```
+
+src/
+├── assets/        # Pretty images & media
+├── components/    # Reusable UI (Header, Modal, Cart, etc.)
+├── pages/         # Page views (Home, Product, Checkout)
+├── store/         # Global cart state via Zustand
+├── utils/         # Helper logic for prices, VAT, etc.
+├── hooks/         # Custom reusable hooks
+├── App.tsx        # Main layout and routes
+└── main.tsx       # Vite app entry
+💻 Getting Started
+Clone the glam repo
 
 
-Audiophile is an e-commerce website that sells audio equipment such as speakers, headphones, and earphones.
-Users can pay for their purchases using either their credit cards (using the Stripe payment gateway) or cryptocurrencies (using coinbase api).
+git clone https://github.com/K-stiles/TMP-e-commerce.git
+cd TMP-e-commerce
+Install the sparkles
 
-## Features
 
-- Browse audio equipments by category
-- View product details and images
-- Add items to the cart
-- Checkout using either a credit card or cryptocurrency
+npm install
+Start your local runway
 
-## Installation
 
-1. Clone this repository to your local machine.
-2. Install the dependencies using npm install.
-3. Create a .env file in the root directory with your Stripe API key:
+npm dev
+Build your boutique
+
+
+npm build
+Preview your glam launch
+
+
+npm preview
 
 ```
-VITE_STRIPE_API_KEY=your_stripe_api_key_here
-```
 
-4. Run the app using npm run dev.
 
-## Usage
+## 🧪 Try It Out!
+- 👜 Add or remove cute products from the cart
 
-- Browse the website by clicking on the different categories of audio equipment in the navigation bar.
-- Click on a product to view its details and add it to your cart.
-- Checkout by clicking on the cart icon in the top right corner and following the prompts.
-- View your order history and status by clicking on the "Orders" link in the navigation bar.
+- 👀 Try submitting an empty or incorrect form
 
-## Contributing
+- 🔄 Refresh the page to test cart persistence
 
-This project is still in development, so we welcome contributions and feedback. If you find any bugs or have suggestions for improvements, please create an issue or submit a pull request.
+- ✨ Navigate across all pages for consistent beauty
+
+- 💸 Confirm VAT and shipping apply correctly
+
+## 🌐 Deployment
+- Hosted with love on Vercel 💕
+Ready for the world to shop in style ✨
